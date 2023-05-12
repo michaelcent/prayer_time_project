@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrayTimesApp.MainPage"
+             Title="Prayer Timing App">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Home" Clicked="HomeClk"/>
+        <ToolbarItem Text="Options" Clicked="OptionClk"/>
+        <ToolbarItem Text="Help" Clicked="HelpClk"/>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <VerticalStackLayout Spacing="25" Padding="30,0" VerticalOptions="Start">
+
+                <Label x:Name="currentTimeLabel" FontSize="20" Text="{Binding CurrentTime}" HorizontalOptions="StartAndExpand"  />
+                <StackLayout Spacing="10">
+                    
+                    
+                    <Label x:Name="fajrLabel" FontSize="20" Text="Fajr" HorizontalOptions="StartAndExpand" />
+                    <Label x:Name="sunriseLabel" FontSize="20" Text="Sunrise" HorizontalOptions="StartAndExpand" />
+                    <Label x:Name="dhuhrLabel" FontSize="20" Text="Dhuhr" HorizontalOptions="StartAndExpand" />
+                    <Label x:Name="asrLabel" FontSize="20" Text="Asr" HorizontalOptions="StartAndExpand" />
+                    <Label x:Name="maghribLabel" FontSize="20" Text="Maghrib" HorizontalOptions="StartAndExpand" />
+                    <Label x:Name="ishaLabel" FontSize="20" Text="Isha" HorizontalOptions="StartAndExpand" />
+                </StackLayout>
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>
